@@ -29,4 +29,4 @@ jobs:
         run: npm install --global surge
         
       - name: Deploy React App to surge
-        run:  surge ./ muneeb.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run:  surge ./build muneeb.surge.sh --token ${{ secrets.SURGE_TOKEN }}
